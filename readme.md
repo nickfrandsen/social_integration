@@ -6,6 +6,7 @@ This module allows users to easily let users sign up and login using facebook an
 
 Simple copy to your Silverstripe project root directory and set config options. You need to add the following constants to your SS _config.php file.
 
+```php
 //FACEBOOK
 define('FACEBOOK_APP_ID', 'AAAAAAA');
 define('FACEBOOK_APP_SECRET', 'BBBBBBB');
@@ -13,6 +14,7 @@ define('FACEBOOK_APP_SECRET', 'BBBBBBB');
 //TWITTER
 define('CONSUMER_KEY', 'CCCCCCC');
 define('CONSUMER_SECRET', 'DDDDDDD');
+```
 
 **Facebook**
 To get the credentials for facebook you will need to go to http://developers.facebook.com/apps and create a new app. Once you have done this it will show you a summary containing the two variables needed.
