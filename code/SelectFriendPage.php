@@ -13,10 +13,9 @@ class SelectFriendPage extends Page {
 }
 class SelectFriendPage_Controller extends Page_Controller {
 	
-	public function init() {
-		parent::init();
-		Requirements::javascript("social_integration/javascripts/select_friends.js");
-	}
+	//public function init() {
+	//	parent::init();	
+	//}
 
 	//to do: controller methods should be twitterfriends without the _ all lowercase
 	function twitterFriends(){

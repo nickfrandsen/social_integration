@@ -159,9 +159,10 @@ class SignupPage_Controller extends Page_Controller {
 			$form->saveInto($member);
 			$member->write();
 			$member->login();
-			$this->setMessage("Changes to profile have been saved.");
+			$this->setMessage("Signup successful.");
 		} catch (ValidationException $e){
-			$this->setMessage("Changes to profile could not be saved because email is already in use.", "bad");
+			$this->setMessage("Signup not successful because email is already in use.", "bad");
+			return Director::redirectBack();
 		}
 		return Director::redirect('/');
 	}

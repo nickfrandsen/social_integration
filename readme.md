@@ -22,6 +22,18 @@ To get the credentials for facebook you will need to go to http://developers.fac
 **Twitter**
 To get the credentials for twitter you will need to go to https://dev.twitter.com/apps and create a new app. One you have done this it will show you a summary containing the two variables needed.
 
+**Example page - Select Friends**
+If you want to use the Select Friends page then you need to add the necessary js file in Page.php init function.
+
+```php
+//Page.php
+
+public function init() {
+	//... loading js requirements ...
+	Requirements::javascript("social_integration/javascripts/select_friends.js");
+}
+```
+
 ## Implementation details
 
 Once a user has signed up the following fields are added to them in the Members table.
